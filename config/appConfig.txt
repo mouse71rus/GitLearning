@@ -1,4 +1,5 @@
 <App>
 	<name>Project X</name>
-	<desc>Description this Application.</desc>	
+	<desc>Description this Application.</desc>
+	<store use=AppStore>on</store>
 </App>
