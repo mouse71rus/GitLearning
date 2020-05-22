@@ -1,30 +1,70 @@
 git init 
 # Инициализация нового git-репозитория
 
+
 git add .
 # Индексация (включение в будущий ближайший коммит) всех файлов перед коммитом
+
 
 git add filename.txt
 # Индексация (включение в будущий ближайший коммит) всех файлов перед коммитом
 
+
 git commit -m "Текст коммита"
 # Фиксация изменений
+
 
 git branch
 # Список веток
 
+
+git branch newBranch
+# Создаст ветку newBranch
+
+
 git checkout master
-# Выбор ветки master
+# Выбор существующей ветки master
+
+
+git checkout -b newBranch
+# Две предыдущие команды можно заменить одной такой
+# Т.е. будет создана новая ветка и сразу же выбрана
+
 
 git log
 # Список всех выполненных коммитов для текущей ветке
+#
+# Для прекращения просмотра списка, нажать 'q'
+
 
 git push origin master
 # Залить изменения на ветку master, сервера origin
+
+
+git checkout branchOfAdmin
+git push origin branchOfAdmin
+# Создать ветку branchOfAdmin на удалённом репозитории и сразу же залить изменения из локальной ветки branchOfAdmin.
+# Ветка branchOfAdmin должна быть предварительно выбрана.
+
 
 git remote add origin https://github.com/mouse71rus/GitLearning.git
 # Настроить команду push
 # Другими словами, указать сервер, куда должны пушиться изменения 
 
+
+git remote
+# Список настроенных удалённых репозиториев (кратко, только имя)
+
+
+git remote -v
+# Список настроенных удалённых репозиториев (подробно, имя и адрес сервера)
+
+
 git clone https://github.com/mouse71rus/GitLearning.git
 # Клонировать репозиторий
+
+
+git checkout master
+git merge branchOfAdmin
+# Слияние ветки master с веткой branchOfAdmin.
+# Ветка master должна быть предварительно выбрана.
