@@ -1,0 +1,4 @@
+<App>
+	<name>Project X</name>
+	<desc>Description this Application.</desc>	
+</App>
