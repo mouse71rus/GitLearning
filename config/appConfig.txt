@@ -1,6 +1,6 @@
 <App>
 	<name>Project X</name>
 	<desc>Description this Application.</desc>
-
 	<var ref="./API/API.cs">token=gfrehu452hjrgu)grej?4g/gr;appID=gewwgjrwbgr7236t3gfskj</var>
+	<store use=AppStore>on</store>
 </App>
