@@ -68,3 +68,7 @@ git checkout master
 git merge branchOfAdmin
 # Слияние ветки master с веткой branchOfAdmin.
 # Ветка master должна быть предварительно выбрана.
+
+
+git merge --abort
+# Отмена слияния
