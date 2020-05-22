@@ -1,0 +1,30 @@
+git init 
+# Инициализация нового git-репозитория
+
+git add .
+# Индексация (включение в будущий ближайший коммит) всех файлов перед коммитом
+
+git add filename.txt
+# Индексация (включение в будущий ближайший коммит) всех файлов перед коммитом
+
+git commit -m "Текст коммита"
+# Фиксация изменений
+
+git branch
+# Список веток
+
+git checkout master
+# Выбор ветки master
+
+git log
+# Список всех выполненных коммитов для текущей ветке
+
+git push origin master
+# Залить изменения на ветку master, сервера origin
+
+git remote add origin https://github.com/mouse71rus/GitLearning.git
+# Настроить команду push
+# Другими словами, указать сервер, куда должны пушиться изменения 
+
+git clone https://github.com/mouse71rus/GitLearning.git
+# Клонировать репозиторий
