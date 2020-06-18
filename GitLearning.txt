@@ -1,4 +1,4 @@
-git init 
+﻿git init 
 # Инициализация нового git-репозитория
 
 
@@ -8,6 +8,16 @@ git add .
 
 git add filename.txt
 # Индексация (включение в будущий ближайший коммит) всех файлов перед коммитом
+
+
+git add .
+git reset -- path/file.cpp
+# Индексировать все файлы кроме файла "file.cpp", лежащего в "path"
+
+
+git add .
+git reset -- mydir
+# Индексировать все файлы кроме файлов, лежащих в "mydir"
 
 
 git commit -m "Текст коммита"
@@ -34,13 +44,13 @@ git checkout -b newBranch
 git log
 # Список всех выполненных коммитов для текущей ветке
 #
-# Для прекращения просмотра списка, нажать 'q'
+# Для прекращения просмотра списка, нажать 'q' (должна быть включена английская раскладка)
 
 
 git log branchName
 # Список всех выполненных коммитов для ветки branchName
 #
-# Для прекращения просмотра списка, нажать 'q'
+# Для прекращения просмотра списка, нажать 'q' (должна быть включена английская раскладка)
 
 
 git push origin master
@@ -77,6 +87,14 @@ git clone https://github.com/mouse71rus/GitLearning .
 # Точка в конце очень важна
 
 
+git fetch origin
+git checkout -b LocalBranch origin/RemoteBranch 
+# Стянуть ещё ветку из удалённого репозитория
+# origin - имя сервера
+# RemoteBranch - имя ветки на удалённом репозитории
+# LocalBranch - имя ветки на локальном репозитории (ветка будет создана)
+
+
 git checkout master
 git merge branchOfAdmin
 # Слияние ветки master с веткой branchOfAdmin.
@@ -85,3 +103,7 @@ git merge branchOfAdmin
 
 git merge --abort
 # Отмена слияния
+
+
+gitk
+# Просмотр графа изменений
