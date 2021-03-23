@@ -241,3 +241,7 @@ git stash clear
 
 git submodule add git@github.com:mouse71rus/GitLearning.Submodule.git
 # Добавить submodule
+
+
+git submodule update --remote
+# Обновить все submodule
