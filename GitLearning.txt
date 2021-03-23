@@ -237,3 +237,7 @@ git stash pop
 
 git stash clear
 # Очистить стек изменений
+
+
+git submodule add git@github.com:mouse71rus/GitLearning.Submodule.git
+# Добавить submodule

@@ -1,0 +1,3 @@
+[submodule "GitLearning.Submodule"]
+	path = GitLearning.Submodule
+	url = git@github.com:mouse71rus/GitLearning.Submodule.git
