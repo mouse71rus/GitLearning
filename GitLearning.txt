@@ -106,6 +106,11 @@ git push origin master
 # Залить изменения на ветку master, сервера origin
 
 
+git push -u origin master
+# Залить изменения на ветку master, сервера origin
+# -u (or --set-upstream) ключ, указывающий на то, что связать текущую ветку с удалённой
+
+
 git checkout branchOfAdmin
 git push origin branchOfAdmin
 # Создать ветку branchOfAdmin на удалённом репозитории и сразу же залить изменения из локальной ветки branchOfAdmin.
@@ -123,6 +128,10 @@ git remote
 
 git remote -v
 # Список настроенных удалённых репозиториев (подробно, имя и адрес сервера)
+
+
+git branch -vv
+# Список веток в информацией о том, с какими из них установлен upstream
 
 
 git clone https://github.com/mouse71rus/GitLearning.git
