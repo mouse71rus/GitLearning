@@ -250,3 +250,11 @@ git submodule update --remote
 git clone https://github.com/mouse71rus/GitLearning.git
 git submodule update --init
 # Получить submodule после клонирования репозитория
+
+
+cd GitLearning.Submodule
+git commit -a -m "Added something.."
+cd ..
+git commit -a -m "Отправка измений submodule на сервер + публикация своих правок"
+git push --recurse-submodules=on-demand
+# Отправка измений submodule на сервер + публикация своих правок
