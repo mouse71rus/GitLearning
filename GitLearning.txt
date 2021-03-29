@@ -276,3 +276,9 @@ cd ..
 git commit -a -m "Отправка измений submodule на сервер + публикация своих правок"
 git push --recurse-submodules=on-demand
 # Отправка измений submodule на сервер + публикация своих правок
+
+
+git submodule update --remote
+git submodule deinit -f .
+git submodule update --init
+# Отменить git submodule update --remote и вернуться к состоянию, соответсвующее remote репозиторию
