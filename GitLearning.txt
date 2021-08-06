@@ -154,6 +154,11 @@ git clone https://github.com/mouse71rus/GitLearning .
 # Точка в конце очень важна
 
 
+git clone -c core.longpaths=true https://github.com/mouse71rus/GitLearning.git
+# Клонировать репозиторий с фиксом проблемы с длинными путями
+# Не нуждается в предварительной команде git init. Сразу git clone
+
+
 git fetch origin
 git checkout -b LocalBranch origin/RemoteBranch 
 # Стянуть ещё ветку из удалённого репозитория
