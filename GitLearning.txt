@@ -86,6 +86,11 @@ git branch --merged master -a
 # -a - этот ключ указывает на то, что показать в том числе и remote branch
 
 
+git checkout -b newBranch
+git branch -u origin/newBranch
+# Связать существующую ветку с веткой на удалённом репозитории
+
+
 git checkout master
 # Выбор существующей ветки master
 
