@@ -1,0 +1,33 @@
+# it is example ssh config file
+# real file name is config
+
+Host bitbucket bitbucket.org
+	HostName bitbucket.org
+	User git
+	IdentityFile ~/.ssh/apple
+
+# It is comment
+# Other github account: superman
+#Host github-superman
+   #HostName github.com
+   #IdentityFile ~/.ssh/superman_private_key
+   #IdentitiesOnly yes
+   
+   
+#Host github-sergey
+ #  HostName github.com
+   #IdentityFile ~/.ssh/beats
+  # IdentitiesOnly yes
+  
+Host dell gitlab.dell.ru
+	HostName gitlab.dell.ru
+	User git
+	IdentityFile ~/.ssh/dell
+	
+Host logitech gitlab.logitech.center
+	HostName gitlab.logitech.center
+	User git
+	IdentityFile ~/.ssh/logitech
+	
+	
+	
