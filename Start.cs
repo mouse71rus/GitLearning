@@ -50,6 +50,11 @@ namespace L1_geo
 
             Console.ReadKey();
         }
+
+        private void Test()
+        {
+            Console.WriteLine("Test");
+        }
     }
 
     public class Point
